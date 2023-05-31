@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "mwi3",
+			"path": "X:\\MW\\mwi3"
+		},
+		{
+			"name": "cmake-tutorial",
+			"path": "."
+		},
+		{
+			"name": "c++libraries",
+			"path": "..\\..\\c++libraries"
+		}
+	],
+	"settings": {}
+}

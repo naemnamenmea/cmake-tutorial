@@ -1,0 +1,4 @@
+namespace basicLibPrivateFile
+{
+    void f();
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\src\dynamicLibPrivateFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\src\dynamicLibPublicFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\private\dynamicLibPrivateFile.hpp">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\public\dynamicLibPublicFile.hpp">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\public\libDynamicDllDefinitions.hpp">
+      <Filter>public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Andrew\source\repos\cmake-tutorial\dev\libraries\libDynamic\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="private">
+      <UniqueIdentifier>{B571E4FF-107F-3C84-AD0C-DA76A0C915B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{07293486-6E3E-3740-B798-87080F393A78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{37C9B748-9DD9-3DF0-BDEC-C584CDEAF67F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

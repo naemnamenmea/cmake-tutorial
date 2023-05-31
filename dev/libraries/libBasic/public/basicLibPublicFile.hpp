@@ -1,0 +1,4 @@
+namespace basicLibPublicFile
+{
+    void f();   
+}
