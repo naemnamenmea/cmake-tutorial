@@ -7,7 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 list(APPEND CMAKE_MODULE_PATH
-    "${CMAKE_SOURCE_DIR}/dev/cmake")
+    "${CMAKE_CURRENT_SOURCE_DIR}/dev/cmake")
 include(common)
 include(CMakePrintHelpers)
 include(FetchContent)
