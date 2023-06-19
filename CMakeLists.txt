@@ -7,9 +7,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 list(APPEND CMAKE_MODULE_PATH
-    "${CMAKE_SOURCE_DIR}/cmake")
+    "${CMAKE_SOURCE_DIR}/dev/cmake")
 include(common)
 include(CMakePrintHelpers)
+include(FetchContent)
 
 list(APPEND CMAKE_PREFIX_PATH
     "C:/Users/Andrew/source/c++libraries")
@@ -42,14 +43,23 @@ else()
 endif()
 project(${project_name} C CXX)
 
-add_subdirectory(libraries/libBasic)
-add_subdirectory(libraries/libStatic)
-add_subdirectory(libraries/libDynamic)
+add_subdirectory(dev/libraries/libBasic)
+add_subdirectory(dev/libraries/libStatic)
+add_subdirectory(dev/libraries/libDynamic)
 
 # external libs
-add_subdirectory("C:/Users/Andrew/source/c++libraries" outside_root)
+# add_subdirectory("C:/Users/Andrew/source/c++libraries" outside_root)
+FetchContent_Declare(
+  my_testing_tools
+  GIT_REPOSITORY https://github.com/naemnamenmea/my-testing-tools.git
+  GIT_TAG        main
+)
+FetchContent_MakeAvailable(my_testing_tools)
 
-add_subdirectory(EntryPoint)
+
+add_subdirectory(dev/unity_build)
+add_subdirectory(dev/EntryPoint)
+add_subdirectory("dev/import extern library")
 
 # get_target_property(INC entryPoint LINK_LIBRARIES)
 # message("")

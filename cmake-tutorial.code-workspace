@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../cheat-sheets"
+		},
+		{
+			"path": "../competitive-programming"
+		},
+		{
+			"path": "../Algorithms-and-Data-Structures"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"algorithm": "cpp"
+		}
+	}
+}
