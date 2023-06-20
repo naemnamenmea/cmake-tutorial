@@ -54,7 +54,12 @@ FetchContent_Declare(
   GIT_REPOSITORY https://github.com/naemnamenmea/my-testing-tools.git
   GIT_TAG        main
 )
-FetchContent_MakeAvailable(my_testing_tools)
+FetchContent_Declare(
+  math
+  GIT_REPOSITORY https://github.com/naemnamenmea/math.git
+  GIT_TAG        main
+)
+FetchContent_MakeAvailable(my_testing_tools math)
 
 
 add_subdirectory(dev/unity_build)
